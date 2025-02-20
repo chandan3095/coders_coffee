@@ -1,2 +1,23 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
+@utility img-shadow {
+  filter: drop-shadow(40px 50px 25px #0f1115);
+}
+
+@utility img-shadow2 {
+  filter: drop-shadow(10px 30px 15px #3030307a);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.input-style {
+  @apply px-4 py-2 border-[1px] border-gray-400 rounded-md my-4;
+}
+
+.primary-btn {
+  @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark;
+}
